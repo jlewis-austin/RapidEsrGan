@@ -6,7 +6,7 @@ function InstallCpuOps(builder) {
             // float case
             let array_buffer_view = new Float32Array(new ArrayBuffer(4));
             array_buffer_view[0] = val;
-            return builder.constant({type: 'float32', dataType: 'float32', dimensions: [1]}, array_buffer_view);
+            return builder.constant({type: 'float32', dataType: 'float32', shape: [1]}, array_buffer_view);
        }
        throw("GenerateMLOperandFromNumber non float is not yet implemented.");
     }
