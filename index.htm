@@ -89,7 +89,7 @@
                 InstallCpuOps(builder);
 
                 const operandType = {type: 'float32',
-                    dataType: 'float32', dimensions: [1, 3, tensor.height, tensor.width]};
+                    dataType: 'float32', shape: [1, 3, tensor.height, tensor.width]};
                 const input_operand = builder.input('input', operandType);
                 const output_operand = loadModelGraph(input_operand, weights_buffer, builder);
                 const graph = await builder.build({'output': output_operand});
