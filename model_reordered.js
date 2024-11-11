@@ -1,14 +1,14 @@
 function loadModelGraph(operand_input, weights_buffer, builder) {
-let operand__Shape_output_0 = operand_input.shape();
+let operand__Shape_output_0 = operand_input.shape;
 const operand__Constant_output_0 = 0
 let operand__Gather_output_0 = builder.gather(operand__Shape_output_0, operand__Constant_output_0, {axis:0})
-let operand__Shape_1_output_0 = operand_input.shape();
+let operand__Shape_1_output_0 = operand_input.shape;
 const operand__Constant_1_output_0 = 1
 let operand__Gather_1_output_0 = builder.gather(operand__Shape_1_output_0, operand__Constant_1_output_0, {axis:0})
-let operand__Shape_2_output_0 = operand_input.shape();
+let operand__Shape_2_output_0 = operand_input.shape;
 const operand__Constant_2_output_0 = 2
 let operand__Gather_2_output_0 = builder.gather(operand__Shape_2_output_0, operand__Constant_2_output_0, {axis:0})
-let operand__Shape_3_output_0 = operand_input.shape();
+let operand__Shape_3_output_0 = operand_input.shape;
 const operand__Constant_3_output_0 = 3
 let operand__Gather_3_output_0 = builder.gather(operand__Shape_3_output_0, operand__Constant_3_output_0, {axis:0})
 const operand__Constant_4_output_0 = 4
